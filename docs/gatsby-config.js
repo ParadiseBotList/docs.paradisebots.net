@@ -12,5 +12,5 @@ require("ts-node").register({
 });
 require("tsconfig-paths").register();
 
-// Use a TypeScript version of gatsby-config.js.
+// Use a TypeScript version of gatsby-config.js for now.
 module.exports = require("./gatsby-config.ts");
