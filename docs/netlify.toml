@@ -11,8 +11,8 @@
 
   # Base environment for production
   [build.environment]
-    SITE_NAME = "Architus Docs"
-    SITE_ROOT = "https://docs.archit.us"
+    SITE_NAME = "Paradise Docs"
+    SITE_ROOT = "https://paradisedocs.netlify"
     BUILD_LOCATION = "remote"
     NODE_ENV = "production"
     GATSBY_PUBLIC = "true"
