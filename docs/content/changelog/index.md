@@ -9,6 +9,6 @@ overrideNav: Changelog
 View patch notes for each release of:
 * Paradise Bot List
 * Paradise API 
-& Paradise Management Bot.
+* & Paradise Management Bot.
 
 <Overview />
