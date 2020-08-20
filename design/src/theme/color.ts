@@ -157,7 +157,7 @@ const staticColors = {
 // ParadisePurple = #7489DC
 
 export const themeColor = "#7489DC";
-export const themeBgColor = "#496D8F";
+export const themeBgColor = "#7489DC";
 export const msTileColor = "#2b5797";
 
 /**
@@ -177,7 +177,7 @@ export type Variant =
 
 // Additional colors used in SEO:
 export const applicationThemeColor = "#7489DC";
-export const safariTabColor = "#6192be";
+export const safariTabColor = "#7489DC";
 export const windowsTileColor = "#ffc40d";
 
 type DynamicColorTable = typeof colors[keyof typeof colors];
