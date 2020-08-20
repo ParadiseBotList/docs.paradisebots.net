@@ -153,6 +153,9 @@ const staticColors = {
 };
 
 // Other colors
+
+// ParadisePurple = #7489DC
+
 export const themeColor = "#7489DC";
 export const themeBgColor = "#496D8F";
 export const msTileColor = "#2b5797";
