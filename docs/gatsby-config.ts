@@ -17,7 +17,7 @@ export const pathPrefix = process.env.SITE_BASE_PATH ?? "/";
 export const siteMetadata = {
   title,
   headerTitle: `Documentation`,
-  version: "Rolling release",
+  version: "v2.00",
   description,
   author: `ParadiseBotList`,
   siteUrl: process.env.SITE_ROOT ?? "https://docs.paradisebots.net",
@@ -34,7 +34,7 @@ export const siteMetadata = {
     discord: `https://discord.gg/ZAgkp2Q`,
   },
   footer: {
-    about: `This site contains implementation documentation for the architus ecosystem, including the microservice-based backend application as well as the React-based web dashboard.`,
+    about: `This site contains Documentation for the Paradise Bot List project and API.`,
     links: [
       {
         href: "https://discord.gg/ZAgkp2Q",
@@ -51,11 +51,7 @@ export const siteMetadata = {
         text: "Main site",
       },
       {
-        href: "https://develop.archit.us/",
-        text: "Main site (canary)",
-      },
-      {
-        href: "https://status.archit.us/",
+        href: "https://paradisebots.statuspal.io",
         text: "Status",
       },
     ],
