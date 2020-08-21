@@ -6,9 +6,9 @@ name: Paradise Docs
 # events but only for the glitch branch
 on:
   push:
-    branches: [ glitch, ParadiseDocs-v2.00]
+    branches: [ glitch ]
   pull_request:
-    branches: [ glitch, ParadiseDocs-v2.00 ]
+    branches: [ glitch ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
