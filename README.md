@@ -19,6 +19,7 @@ To start using our services Please join our Discord Server and/or Submit a bot o
 - [Paradise Changes](https://docs.paradisebots.net//changelog/)
 - [Paradise Docs](https://docs.paradisebots.net//internal)
 - [Build Details](https://app.netlify.com/sites/paradisedocs/deploys)
+- [Discord Server](https://paradisebots.net/join)
 
 ---
 
@@ -28,11 +29,10 @@ To start using our services Please join our Discord Server and/or Submit a bot o
 
 ## Features
  - Markdown and Iframe descriptions
- - Minimalistic website (with dark theme)
  - Bot resubmit option
  - Bot widget
  - Search option
- - Easy setup (all customisation features in one file)
- - Discord bot for bot verification
- - Server count API
+ - Server & Shard count API
+- Certification Program
+- Partner Program
 
