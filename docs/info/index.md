@@ -3,7 +3,7 @@ title: Paradise Support
 ---
 
 Support for the Paradise Bots Project is offered in various ways.
-* [Our Discord]()
+* [Our Discord](https://paradisebots.net/join)
 * [Our Twitter](https://twitter.com/ParadiseBotList)
 * [Our Github](https://github.com/ParadiseBotList)
  
