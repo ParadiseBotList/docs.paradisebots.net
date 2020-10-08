@@ -10,7 +10,7 @@ links:
     text: Main App
 
 rightLinks:
-  - href: "https://discord.gg/ZAgkp2Q"
+  - href: "https://paradisebots.net/join"
     icon: discord
     class: d-none d-sm-block
   - href: "https://github.com/ParadiseBotList"
