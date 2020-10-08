@@ -16,11 +16,6 @@ These Documentation Pages will tell you how to use our API to help you create an
 ## Features
 * Track and Post Server Count Stats to our Bot List/Website.
 * Track and Post Shard Count Stats to our Bot List/Website.
-* Python Support
-* Discord.js Support
-* Eris Support
-* Klasa Support (Soon)
-* Java Support (Soon)
 
 ---
 
