@@ -57,7 +57,8 @@ setInterval(() => {
    pbl.post(client.guilds.cache.size) /* Will `POST` server count*/
    //pbl.post(client.shard.count) /* Will `POST` shard count*/
    //pbl.post(client.guilds.cache.size, client.shard.count) /* Will `POST` server and shard count*/
-})
+  })
+}, 300000) //5 Minutes in MS
 
 client.on("message", message => {
     if(message.author.bot) return
