@@ -7,8 +7,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Paradise Docs`,
-    description: `The Discord Bot List that strives to provide Discord Bots & Bot Devs with a little bit of freedom`,
+    title: `Paradise Bots Docs`,
+    description: `Official Documentation for Paradise Bot List`,
     author: `ParadiseBotList`,
     siteUrl: `https://docs.paradisebots.net`,
     themeColor,
