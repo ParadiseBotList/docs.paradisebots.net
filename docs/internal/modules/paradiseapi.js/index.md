@@ -169,16 +169,6 @@ client.on("message", message => { // message listener
         .setTitle(data.bot_name)
         .setDescription(`
         Votes: ${data.votes},
-        Support: ${data.server},
-        Website: ${data.website},
-        Donate: ${data.donate},
-        Tags: ${data.tags}
-        Prefix: ${data.prefix},
-        Library: ${data.library},
-        Description: ${data.shortDescription},
-        Servers: ${data.servers},
-        Shards: ${data.shards},
-        Staff: ${data.additionalOwners},
         `)
         .setFooter(`Bot created by ${data.owner}`)
 
