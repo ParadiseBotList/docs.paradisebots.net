@@ -12,7 +12,7 @@ certifiedBadge | Object | The Certified Bot Badge featured on the bot page.
 
 ## Certification Requirements
 * All bots must meet these requirements before being considered for Certification.
-  1. Have atleast 50 Votes.
+  1. Have atleast 30 Votes.
   2. Has been Listed for `15 Days` or longer.
   3. No NSFW content outside of NSFW channels.
   4. No Mass DM Commands.
@@ -21,6 +21,7 @@ certifiedBadge | Object | The Certified Bot Badge featured on the bot page.
   7. Have an informative and detailed bot page on paradise bots.
   8. Have either a support server or website.
   9. Have a minimum of 10 functional commands
+  10. Posting Server and/or Shard Count stats to your bot page on paradise bots
 
 #### More Info about Requirements:
 * Public Definition (ie: Public DM Commands)
