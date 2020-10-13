@@ -66,6 +66,9 @@ You can POST Server and Shard Count stats once every 5 minutes
 ---
 
 ## Example (Discord.js v12)
+
+<Route method="POST" path="/api/v1/bot/:botid" />
+
 ```js
 const Discord = require("discord.js")
 const client = new Discord.Client()
@@ -97,6 +100,9 @@ client.login("token")
 ---
 
 ## Example (Discord.js v12 With Event Handler)
+
+<Route method="POST" path="/api/v1/bot/:botid" />
+
 ```js
 module.exports = class extends EventClass {
     constructor() {
@@ -119,6 +125,9 @@ module.exports = class extends EventClass {
 ```
 
 ## Example ([Discord Akairo](https://www.npmjs.com/package/discord-akairo))
+
+<Route method="POST" path="/api/v1/bot/:botid" />
+
 ```js
 const Discord = require('discord.js');
 const { Listener } = require('discord-akairo');
@@ -148,6 +157,9 @@ module.exports = class ReadyListener extends Listener {
 ```
 
 ## Fetching Stats (Example)
+
+<Route method="GET" path="/api/v1/bots/:botid" />
+
 ```js
 const Discord = require("discord.js")
 const client = new Discord.Client()
