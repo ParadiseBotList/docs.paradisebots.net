@@ -153,7 +153,7 @@ const Discord = require("discord.js")
 const client = new Discord.Client()
 const prefix = "!";
 const PBL = require("paradisebotsapi.js")
-const stats = new PBL.get()
+const stats = new PBL()
  
 client.on("ready", () => { // ready listenerconsole.log(`Logged in as ${client.user.tag}`)}) 
 client.on("message", message => { // message listener
