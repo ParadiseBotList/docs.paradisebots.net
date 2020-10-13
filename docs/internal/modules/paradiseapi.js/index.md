@@ -6,18 +6,41 @@ An official NPM Module for interacting with the  Paradise API
 
 ---
 
+## Support
+
+* [Discord](https://paradisebots.net/join)
+
+* [Docs](https://docs.paradisebots.net/internal)
+
+* [Website](https://paradisebots.net)
+
+* [Bug Report](https://paradisebots.net/bug)
+
+---
+
 ## Installation
-`npm i paradiseapi.js@1.0.2`
+`npm i paradiseapi.js@latest`
+
+or
+
+`npm i paradiseapi.js@latest`
+
+or
+
+`npm i paradiseapi.js --save`
 
 ## Hard Coded Install
 Append the Line below to your package.json
 ```
-    "paradiseapi.js": "^1.0.2",
+    "paradiseapi.js": "^1.0.3",
 ```
 
 • Save and profit
 
 ---
+
+## Ratelimits
+You can POST Server and Shard Count stats once every 5 minutes
 
 ## Response
 
@@ -123,3 +146,47 @@ module.exports = class ReadyListener extends Listener {
     }
 }
 ```
+
+## Fetching Stats (Example)
+```js
+const Discord = require("discord.js")
+const client = new Discord.Client()
+const prefix = "!";
+const PBL = require("paradisebotsapi.js")
+const stats = new PBL.get()
+ 
+client.on("ready", () => { // ready listenerconsole.log(`Logged in as ${client.user.tag}`)}) 
+client.on("message", message => { // message listener
+    if(message.author.bot) return;
+    if(message.channel.type !== "text") return;
+    if(!message.content.toLowerCase().startsWith(prefix)) return;
+    if(message.content == (prefix + "ping")){
+        message.reply(`Pong ${client.ws.ping}ms`)
+    }
+     if(message.content == (prefix + "stats")){
+        stats.get(client.user.id, function(data){ // ID should be string
+        let embed = new MessageEmbed()
+        .setTitle(data.bot_name)
+        .setDescription(`
+        Votes: ${data.votes},
+        Support: ${data.server},
+        Website: ${data.website},
+        Donate: ${data.donate},
+        Tags: ${data.tags}
+        Prefix: ${data.prefix},
+        Library: ${data.library},
+        Description: ${data.shortDescription},
+        Servers: ${data.servers},
+        Shards: ${data.shards},
+        Staff: ${data.additionalOwners},
+        `)
+        .setFooter(`Bot created by ${data.owner}`)
+        })
+        message.channel.send(embed)
+    }
+})
+ 
+ 
+client.login("token")
+```
+
