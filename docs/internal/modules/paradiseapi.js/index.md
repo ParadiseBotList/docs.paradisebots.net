@@ -166,7 +166,7 @@ client.on("message", message => { // message listener
      if(message.content == (prefix + "stats")){
         stats.get(client.user.id, function(data){ // ID should be string
         let embed = new MessageEmbed()
-        .setTitle(data.bot_name)
+        .setTitle(data.username)
         .setDescription(`
         Votes: ${data.votes},
         `)
