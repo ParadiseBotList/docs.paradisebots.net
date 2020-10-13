@@ -23,7 +23,7 @@ An official NPM Module for interacting with the  Paradise API
 
 or
 
-`npm i paradiseapi.js@latest`
+`npm i paradiseapi.js@1.0.5`
 
 or
 
@@ -32,7 +32,7 @@ or
 ## Hard Coded Install
 Append the Line below to your package.json
 ```
-    "paradiseapi.js": "^1.0.3",
+    "paradiseapi.js": "^1.0.5",
 ```
 
 • Save and profit
@@ -167,10 +167,8 @@ client.on("message", message => { // message listener
         stats.get(client.user.id, function(data){ // ID should be string
         let embed = new MessageEmbed()
         .setTitle(data.username)
-        .setDescription(`
-        Votes: ${data.votes},
-        `)
-        .setFooter(`Bot created by ${data.owner}`)
+        .setDescription(`Vote here: https://paradisebots.net/api/v1/bots/${client.user.id}`)
+        .addField("Total Votes", data.votes);
 
         message.channel.send(embed)
         })
