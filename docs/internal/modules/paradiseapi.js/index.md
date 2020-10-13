@@ -164,7 +164,7 @@ client.on("message", message => { // message listener
         message.reply(`Pong ${client.ws.ping}ms`)
     }
      if(message.content == (prefix + "stats")){
-        stats.get(client.user.id, function(data){ // ID should be string
+        stats.get(client.user.id, function(data){
         let embed = new MessageEmbed()
         .setTitle(data.username)
         .setDescription(`Vote here: https://paradisebots.net/api/v1/bots/${client.user.id}`)
