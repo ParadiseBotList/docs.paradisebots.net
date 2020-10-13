@@ -181,8 +181,9 @@ client.on("message", message => { // message listener
         Staff: ${data.additionalOwners},
         `)
         .setFooter(`Bot created by ${data.owner}`)
-        })
+
         message.channel.send(embed)
+        })
     }
 })
  
