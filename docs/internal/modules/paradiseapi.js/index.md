@@ -70,8 +70,8 @@ You can POST Server and Shard Count stats once every 5 minutes
 const Discord = require("discord.js")
 const client = new Discord.Client()
 const prefix = "!";
-const PBL = require("paradisebotsapi.js")
-const pbl = new PBL.get(client.user.id,"bot-auth-token")
+const PBL = require("paradiseapi.js")
+const pbl = new PBL(client.user.id,"bot-auth-token")
 
 client.on("ready", () => {
 console.log(`Logged in as ${client.user.tag}.`)
@@ -108,7 +108,7 @@ module.exports = class extends EventClass {
 
     exec() {
   const PBL = require("paradiseapi.js")
-  const pbl = new PBL.get("BOT_ID_HERE","AUTH_TOKEN_HERE")
+  const pbl = new PBL("BOT_ID_HERE","AUTH_TOKEN_HERE")
   
 /* Here is where we Post the stats to the Site (Only use one of these) */
    pbl.post(client.guilds.cache.size) /* Will `POST` server count*/
@@ -137,7 +137,7 @@ module.exports = class ReadyListener extends Listener {
 
     exec() {
   const PBL = require("paradiseapi.js")
-  const pbl = new PBL.get("BOT_ID_HERE","AUTH_TOKEN_HERE")
+  const pbl = new PBL("BOT_ID_HERE","AUTH_TOKEN_HERE")
   
 /* Here is where we Post the stats to the Site (Only use one of these) */
    pbl.post(client.guilds.cache.size) /* Will `POST` server count*/
