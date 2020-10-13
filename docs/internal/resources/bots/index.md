@@ -7,8 +7,6 @@ Field |	Type	| Description | Status
 |--------------|----------|--------------|--------------|
 botid | Snowflake | The id of the bot | **ACTIVE**
 username | String | The username of the bot | **ACTIVE**
-avatar? | String | The avatar hash of the bot's avatar | **BACK END**
-defAvatar | String | The cdn hash of the bot's avatar if the bot has none | **BACK END**
 library	| String | The library of the bot | **COMING SOON**
 prefix	| String | The prefix of the bot | **ACTIVE**
 shortDescription | String | The short description of the bot | **ACTIVE**
