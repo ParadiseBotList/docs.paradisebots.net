@@ -5,32 +5,33 @@ title: Bot Object
 ###### Bot Structure
 Field |	Type	| Description | Status
 |--------------|----------|--------------|--------------|
-id	| Snowflake	| The id of the bot | **ACTIVE**
-username	| String	| The username of the bot | **ACTIVE**
-discriminator |	String	| The discriminator of the bot | **ACTIVE**
-avatar?	| String	| The avatar hash of the bot's avatar | **BACK END**
-defAvatar	| String	| The cdn hash of the bot's avatar if the bot has none | **BACK END**
-lib	| String	| The library of the bot | **COMING SOON**
-prefix	| String	| The prefix of the bot | **ACTIVE**
-shortdesc	| String	| The short description of the bot | **ACTIVE**
-longdesc?	| String	| The long description of the bot. Can contain Markdown | **ACTIVE**
-tags	| Array of Strings	| The tags of the bot. Featured on the bot page | **COMING SOON**
-website?	| String	| The website url of the bot | **COMING SOON**
-support?	| String	| The support server invite code of the bot | **COMING SOON**
-github? |	String	| The link to the github repo of the bot | **COMING SOON**
-owners	| Array of Snowflakes	| The owners of the bot. First one in the array is the main owner | **ACTIVE**
-guilds	| Array of Snowflakes	| The guilds featured on the bot page | **COMING SOON**
-invite?	| String	| The custom bot invite url of the bot | **ACTIVE**
-date	| Date	| The date when the bot was approved | **BACK END**
-verifiedBot	| Boolean	| The verified status of the bot on our list | **BACK END**
-certifiedBot | Boolean | The certified status of the bot | **COMING SOON**
-vanity?	| String	| The vanity url of the bot | **ACTIVE**
+botid | Snowflake | The id of the bot | **ACTIVE**
+username | String | The username of the bot | **ACTIVE**
+avatar? | String | The avatar hash of the bot's avatar | **BACK END**
+defAvatar | String | The cdn hash of the bot's avatar if the bot has none | **BACK END**
+library	| String | The library of the bot | **COMING SOON**
+prefix	| String | The prefix of the bot | **ACTIVE**
+shortDescription | String | The short description of the bot | **ACTIVE**
+longDescription | String | The long description of the bot. Can contain Markdown | **ACTIVE**
+tags | String | The tags of the bot. Featured on the bot page | **COMING SOON**
+website | String | The website url of the bot | **COMING SOON**
+server | String | The support server invite code of the bot | **COMING SOON**
+github | String | The link to the github repo of the bot | **COMING SOON**
+owner | String | The owner of the bot. | **ACTIVE**
+additionalOwners | Array | The additional owners or staff of the bot. | **ACTIVE**
+servers	| Number | The bots Guild Count | **ACTIVE**
+shards	| Number | The bots Shard Count | **ACTIVE**
 
 ---
 
 ## Get Bots
-Use this endpoint to gain information about different bots as well as a list of all approved bots
-<Route method="GET" path="/bots" />
+Use this endpoint to gain information about bots
+
+### API | Specified Bot
+<Route method="GET" path="/api/v1/bots/:botid" />
+
+### API | All Approved Bots
+<Route method="GET" path="/api/v1/bots/list" />
 
 ---
 
