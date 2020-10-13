@@ -30,3 +30,20 @@ print(response.text.encode('utf8'))
 ```
 
 ---
+
+## User-Made API
+
+There is a user-made API for Python as well. The gist (with an example) is found here: https://gist.github.com/Aryamaan08/6833f31218b00f7792dc900728b0db01
+
+---
+
+## User-Made API Example
+
+Copy the code in the gist and save it as `paradise.py`.
+```
+from paradise import Paradise
+@client.command()
+async def votecount(ctx):
+  b = Paradise(client.user.id)
+  await ctx.send(f"I have `{b.votes}` votes. Vote for me at https://paradisebots.net/bots/{client.user.id} now!")
+```
