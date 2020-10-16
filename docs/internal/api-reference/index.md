@@ -10,7 +10,7 @@ Our API is a HTTPS/REST for general operations such as sending POST requests and
 ###### Base URL
 
 ```markdown
-https://paradisebots.net/api
+https://paradisebots.net/api/v1
 ```
 
 ---
