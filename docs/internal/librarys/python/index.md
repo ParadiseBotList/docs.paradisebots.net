@@ -2,48 +2,64 @@
 title: Paradise Python Library
 ---
 
-This is our official Python Library for Paradise Bots, if you have any issues please submit an issue on our github or join our discord
-* [Github Link](https://github.com/ParadiseBotList)
-* [Discord Link](https://discord.gg/Cqy99Pt)
+This is our official User Made Python Library for Paradise Bots, if you have any issues please submit an issue on our github or join our discord
 
----
-To start using server counts on a bot, 
-* Go to your bot edit page, 
-* Click the Authorization Token link at the bottom of the page. This will generate an auth token.
+* [Github Link](https://gist.github.com/Aryamaan08/6833f31218b00f7792dc900728b0db01)
+* [Discord Link](https://paradisebots.net/join)
 
 ---
 
-## Example
-Example with Automatic Server Count
-```Python
-url = "https://paradisebots.net/api/v1/bot/:botid" # Replace :botid with your bot ID
+## Wrapper Example
 
-payload = "{\"server_count\": 1500}" # Replace this number with the server count
-headers = {
-  'authorization': 'YOUR_AUTH_TOKEN',
-  'Content-Type': 'application/json'
-}
+Copy the code below and save it as `paradise.py`.
 
-response = requests.request("POST", url, headers=headers, data = payload)
-print(response.text.encode('utf8'))
+```python
+import requests, json
 
+def basic_return(bot_id, q):
+    r = requests.get(f"https://paradisebots.net/api/v1/bots/{bot_id}")
+    try:
+        return json.loads(r.content)[q]
+    except:
+        raise ValueError("Invalid Bot ID.")
+
+class Paradise:
+    def __init__(self, bot_id):
+        self.id = bot_id
+        self.tags = basic_return(bot_id, "tags").split(", ")
+        self.votes = basic_return(bot_id, "votes")
+        self.owner = int(basic_return(bot_id, "owner"))
+        self.additional_owners = basic_return(bot_id, "additionalOwners")
+        self.prefix = basic_return(bot_id, "prefix")
+        self.description = basic_return(bot_id, "shortDescription")
+        self.long_description = basic_return(bot_id, "longDescription")
+        self.username = basic_return(bot_id, "username")
+        self.website = basic_return(bot_id, "website")
+        self.github = basic_return(bot_id, "github")
+        self.donations = basic_return(bot_id, "donate")
+        self.support_server = basic_return(bot_id, "server")
+        self.bot_library = basic_return(bot_id, "library")
+        self.total_servers = basic_return(bot_id, "servers")
+        self.total_shards = basic_return(bot_id, "shards")
+
+    def is_owner(self, user_id):
+        try:
+            if str(user_id) in self.additional_owners or user_id == self.owner:
+                return True
+            else:
+                print(self.owner)
+                return False
+        except:
+            raise ValueError("Invalid Bot ID.")
 ```
 
----
+## Fetching Stats Example
 
-## User-Made API
-
-There is a user-made API for Python as well. The gist (with an example) is found here: https://gist.github.com/Aryamaan08/6833f31218b00f7792dc900728b0db01
-
----
-
-## User-Made API Example
-
-Copy the code in the gist and save it as `paradise.py`.
-```
+```python
 from paradise import Paradise
 @client.command()
 async def votecount(ctx):
   b = Paradise(client.user.id)
   await ctx.send(f"I have `{b.votes}` votes. Vote for me at https://paradisebots.net/bots/{client.user.id} now!")
 ```
+
