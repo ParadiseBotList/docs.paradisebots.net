@@ -1,5 +1,5 @@
 ---
-title: Paradise Python Library
+title: Python Library
 ---
 
 This is our official User Made Python Library for Paradise Bots, if you have any issues please submit an issue on our github or join our discord
