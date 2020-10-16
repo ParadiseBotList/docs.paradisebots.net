@@ -79,7 +79,7 @@ You can POST Server and Shard Count stats once every 5 minutes
 ### Constructor
 
 ```
-PBL(client.user.id,"bot-auth-token")
+PBL(client, token)
 ```
 
 ###### Arguments
