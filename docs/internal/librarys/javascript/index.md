@@ -2,65 +2,193 @@
 title: Paradise JavaScript Library
 ---
 
-This is our official JavaScript Library for Paradise Bots, if you have any issues please submit an issue on our github or join our discord.
-* [Github Link](https://github.com/ParadiseBotList/paradisebotsapi.js/issues)
-* [Discord Link](https://discord.gg/Cqy99Pt)
-* [Official NPM Module](https://help.paradisebots.net/docs/examples/paradiseapi.js)
+## paradiseapi.js
 
----
-To start using server counts on a bot, 
-* Go to your bot edit page, 
-* Click the Authorization Token button. This will generate an auth token.
+An official NPM Module for interacting with the Paradise API
 
 ---
 
-## Example
-Example of posting server count with supported libraries (Discord.js and Eris)
+## Support
 
-```js
-var myHeaders = new Headers();
-myHeaders.append("authorization", "YOUR_AUTH_TOKEN");
-myHeaders.append("Content-Type", "application/json");
+* [Discord](https://paradisebots.net/join)
 
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: JSON.stringify({"server_count": 1500}); // Replace this number with the server count
-};
+* [GitHub](https://github.com/ParadiseBotList/paradisebotsapi.js)
 
-fetch("https://paradisebots.net/api/v1/bot/:botid", requestOptions) // Make sure you replace "botid" with your Bots Client ID
-  .then(response => response.text())
-  .then(console.log)
-  .catch(console.error);
+* [Website](https://paradisebots.net)
+
+* [Bug Report](https://paradisebots.net/bug)
+
+---
+
+## Installation
+`npm i paradiseapi.js@latest`
+
+or
+
+`npm i paradiseapi.js@1.0.8`
+
+or
+
+`npm i paradiseapi.js --save`
+
+## Hard Coded Install
+Append the Line below to your package.json
+```
+    "paradiseapi.js": "^1.0.8",
 ```
 
-## Example
-Example of posting server count using superagent
+• Save and profit
+
+---
+
+## Ratelimits
+You can POST Server and Shard Count stats once every 5 minutes
+
+## Response
+
+> [ Error ] 429 : `[PBL] (429): Your are being ratelimited, 1 request per 5 mins.`
+
+> [ Error ] 404 : `[PBL] (404): Can't find server_count.`
+
+> [ Error ] 404 : `[PBL] (404): Authorization header not found.`
+
+> [ Error ] 400 : `[PBL] (400): server_count not integer.`
+
+> [ Error ] 404 : `[PBL] (404): Bot not found!`
+
+> [ Error ] 400 : `[PBL] (400): Incorrect authorization token.`
+
+> [ Error ] 404 : `[PBL] (404): Go generate auth token for your bot!`
+
+> [ Error ] 400 : `[PBL] (400): shard_count not integer.`
+
+
+> [ Success ] 200 : **[200]: Your Stats Has Been Posted.**
+
+---
+
+
+## Posting Stats
+
+<Route method="POST" path="/api/v1/bot/:botid" auth /> 
+
+### Discord.js v12
 
 ```js
-client.on("ready", async () => {
-            const servercount = client.guilds.cache.size
-            superagent.post(`https://paradisebots.net/api/v1/bot/:botid`)
-                .set('Authorization', 'KEY')
-                .send({
-                    server_count: servercount,
-                    shard_count: "1"
-                })
-                .then(console.log('Updated your stats'))
-                .catch(e => console.warn('Paradise API is down spam Toxic Dev'));
-            superagent.post(`https://paradisebots.net/api/v1/bot/:botid`)
-                .set('Authorization', 'KEY')
-                .send({
-                    server_count: servercount,
-                    shard_count: "1"
-                })
-                .then(console.log('Updated your stats'))
-                .catch(e => console.warn('Paradise API is down spam Toxic Dev'));
-        } catch (err) {
-            return;
-        }
-    }, 3600000);
-});
+const Discord = require("discord.js")
+const client = new Discord.Client()
+const prefix = "!";
+const PBL = require("paradiseapi.js")
+const pbl = new PBL(client.user.id,"bot-auth-token")
+
+client.on("ready", () => {
+console.log(`Logged in as ${client.user.tag}.`)
+setInterval(() => {
+/* Here is where we Post the stats to the Site (Only use one of these) */
+   pbl.post(client.guilds.cache.size) /* Will `POST` server count*/
+   //pbl.post(client.shard.count) /* Will `POST` shard count*/
+   //pbl.post(client.guilds.cache.size, client.shard.count) /* Will `POST` server and shard count*/
+  })
+}, 300000) //5 Minutes in MS
+
+client.on("message", message => {
+    if(message.author.bot) return
+    if(message.content == prefix + "ping"){
+        message.reply(`Pong! it took ${client.ws.ping}`)
+    }
+})
+
+client.login("token")
+
 ```
+
+### Discord.js v12 (Wtih event handler
+
+```js
+module.exports = class extends EventClass {
+    constructor() {
+        super('ready', {
+            emitter: 'client',
+            event: 'ready'
+        });
+    }
+
+    exec() {
+  const PBL = require("paradiseapi.js")
+  const pbl = new PBL("BOT_ID_HERE","AUTH_TOKEN_HERE")
+  
+/* Here is where we Post the stats to the Site (Only use one of these) */
+   pbl.post(client.guilds.cache.size) /* Will `POST` server count*/
+   //pbl.post(client.shard.count) /* Will `POST` shard count*/
+   //pbl.post(client.guilds.cache.size, client.shard.count) /* Will `POST` server and shard count*/
+    }
+}
+```
+
+### ([Discord Akairo](https://www.npmjs.com/package/discord-akairo))
+
+```js
+const Discord = require('discord.js');
+const { Listener } = require('discord-akairo');
+const request = require('superagent');
+const fetch = require("node-fetch")
+const Client = new Discord.Client()
+
+
+module.exports = class ReadyListener extends Listener {
+    constructor() {
+        super('ready', {
+            emitter: 'client',
+            event: 'ready'
+        });
+    }
+
+    exec() {
+  const PBL = require("paradiseapi.js")
+  const pbl = new PBL("BOT_ID_HERE","AUTH_TOKEN_HERE")
+  
+/* Here is where we Post the stats to the Site (Only use one of these) */
+   pbl.post(client.guilds.cache.size) /* Will `POST` server count*/
+   //pbl.post(client.shard.count) /* Will `POST` shard count*/
+   //pbl.post(client.guilds.cache.size, client.shard.count) /* Will `POST` server and shard count*/
+    }
+}
+```
+
+## Getting Stats
+
+<Route method="GET" path="/api/v1/bots/:botid" />
+
+```js
+const Discord = require("discord.js")
+const client = new Discord.Client()
+const prefix = "!";
+const PBL = require("paradisebotsapi.js")
+const stats = new PBL()
+ 
+client.on("ready", () => { // ready listenerconsole.log(`Logged in as ${client.user.tag}`)}) 
+client.on("message", message => { // message listener
+    if(message.author.bot) return;
+    if(message.channel.type !== "text") return;
+    if(!message.content.toLowerCase().startsWith(prefix)) return;
+    if(message.content == (prefix + "ping")){
+        message.reply(`Pong ${client.ws.ping}ms`)
+    }
+     if(message.content == (prefix + "stats")){
+        stats.get(client.user.id, function(data){
+        let embed = new MessageEmbed()
+        .setTitle(data.username)
+        .setDescription(`Vote here: https://paradisebots.net/api/v1/bots/${client.user.id}`)
+        .addField("Total Votes", data.votes);
+
+        message.channel.send(embed)
+        })
+    }
+})
+ 
+ 
+client.login("token")
+```
+
 
 ---
