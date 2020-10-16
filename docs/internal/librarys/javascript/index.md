@@ -1,5 +1,5 @@
 ---
-title: Paradise JavaScript Library
+title: JavaScript Library
 ---
 
 ## paradiseapi.js
