@@ -31,6 +31,8 @@ or
 
 `npm i paradiseapi.js --save`
 
+---
+
 ## Hard Coded Install
 Append the Line below to your package.json
 ```
@@ -43,6 +45,8 @@ Append the Line below to your package.json
 
 ## Ratelimits
 You can POST Server and Shard Count stats once every 5 minutes
+
+---
 
 ## Response
 
@@ -72,7 +76,7 @@ You can POST Server and Shard Count stats once every 5 minutes
 
 <Route method="POST" path="/api/v1/bot/:botid" auth /> 
 
-### Discord.js v12
+### Discord.js v12 Example
 
 ```js
 const Discord = require("discord.js")
@@ -102,7 +106,7 @@ client.login("token")
 
 ```
 
-### Discord.js v12 (Wtih event handler
+### Discord.js v12 Example (Wtih event handler
 
 ```js
 module.exports = class extends EventClass {
@@ -125,7 +129,7 @@ module.exports = class extends EventClass {
 }
 ```
 
-### ([Discord Akairo](https://www.npmjs.com/package/discord-akairo))
+### ([Discord Akairo](https://www.npmjs.com/package/discord-akairo)) Example
 
 ```js
 const Discord = require('discord.js');
@@ -154,6 +158,8 @@ module.exports = class ReadyListener extends Listener {
     }
 }
 ```
+
+---
 
 ## Getting Stats
 
