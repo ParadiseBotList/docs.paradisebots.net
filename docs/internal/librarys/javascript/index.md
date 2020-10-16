@@ -4,7 +4,7 @@ title: JavaScript Library
 
 ## paradiseapi.js
 
-An official NPM Module for interacting with the Paradise API
+This is our official library used for interacting with the Paradise API.
 
 ---
 
@@ -196,5 +196,12 @@ client.on("message", message => { // message listener
 client.login("token")
 ```
 
+## Used-Made Libraries
+
+We currently don't endorse any unofficial libraries for the API, but if you think you could contribute to our current libraries check out our github repos and maybe submit a PR. If you think we should endorse your unofficial (user-made) library for a language we don't already support hit us up in our API Support Discord Channel or DM  a Web Admin
+
+* [Github Link](https://github.com/ParadiseBotList)
+
+* [Discord Link](https://paradisebots.net/join)
 
 ---
