@@ -179,6 +179,38 @@ module.exports = class ReadyListener extends Listener {
 
 <Route method="GET" path="/api/v1/bots/:botid" />
 
+### Constructor
+
+```
+PBL()
+```
+
+###### Arguments
+Parameter | Type | Optional | Description
+|--------------|----------|--------------|--------------|
+username | String | Yes | The bots username.
+botid | Snowflake | Yes | The bots ID.
+owner | Snowflake | Yes | The bot owners ID.
+additionalOwners | String | Yes | The IDs of all additional owners (if any).
+Prefix | String | Yes | The bots listed prefix(s).
+shortDescription | String | Yes | The bots short description (Shown on cards).
+longDescription | String | Yes | The bots long description (Can be markdown).
+votes | Number | Yes | The bots total number of upvotes.
+usersVoted | String | Yes |IDs of the last 10 users who voted (May return less).
+usersVotedTotal | Number | Yes | Total number of Individual Users who have voted (Each user = 1).
+server | String | Yes | Link to the bots support server.
+website | String | Yes | Link to the bots website.
+github | String | Yes | Link to the bots github.
+donate | String | Yes | Link to donate to the bot.
+tags | String | Yes | List of the bots tags.
+library | String | Yes | The library the bot was made with.
+servers | Number | Yes | Number of total servers the bot is in.
+shards | Number | Yes | Number of total shards the bot has.
+
+
+--- 
+
+### Example
 ```js
 const Discord = require("discord.js")
 const client = new Discord.Client()
@@ -210,12 +242,12 @@ client.on("message", message => { // message listener
 client.login("token")
 ```
 
-## Used-Made Libraries
+--- 
+
+## User-Made Libraries
 
 We currently don't endorse any unofficial libraries for the API, but if you think you could contribute to our current libraries check out our github repos and maybe submit a PR. If you think we should endorse your unofficial (user-made) library for a language we don't already support hit us up in our API Support Discord Channel or DM  a Web Admin
 
 * [Github Link](https://github.com/ParadiseBotList/paradisebotsapi.js)
 
 * [Discord Link](https://paradisebots.net/join)
-
----
