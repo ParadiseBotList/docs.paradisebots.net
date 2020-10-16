@@ -76,6 +76,20 @@ You can POST Server and Shard Count stats once every 5 minutes
 
 <Route method="POST" path="/api/v1/bot/:botid" auth /> 
 
+### Constructor
+
+```
+PBL(client.user.id,"bot-auth-token")
+```
+
+###### Arguments
+Parameter | Type | Optional | Description
+|--------------|----------|--------------|--------------|
+token | String | No | The API Auth Token found on your bots page.
+client | Snowflake | No | The Client ID for the bot you want to post stats to.
+
+--- 
+
 ### Discord.js v12 Example
 
 ```js
