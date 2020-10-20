@@ -90,8 +90,7 @@ client | Snowflake | No | The Client ID for the bot you want to post stats to.
 
 --- 
 
-### Discord.js v12 Example
-
+###### Discord.js v12 Example
 ```js
 const Discord = require("discord.js")
 const client = new Discord.Client()
@@ -120,8 +119,7 @@ client.login("token")
 
 ```
 
-### Discord.js v12 Example (Wtih event handler
-
+###### Discord.js v12 Example (Wtih event handler
 ```js
 module.exports = class extends EventClass {
     constructor() {
@@ -143,8 +141,7 @@ module.exports = class extends EventClass {
 }
 ```
 
-### ([Discord Akairo](https://www.npmjs.com/package/discord-akairo)) Example
-
+###### ([Discord Akairo](https://www.npmjs.com/package/discord-akairo)) Example
 ```js
 const Discord = require('discord.js');
 const { Listener } = require('discord-akairo');
@@ -210,7 +207,7 @@ shards | Number | Yes | Number of total shards the bot has.
 
 --- 
 
-### Example
+###### Example
 ```js
 const Discord = require("discord.js")
 const client = new Discord.Client()
