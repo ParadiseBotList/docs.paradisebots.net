@@ -53,11 +53,11 @@ Status | Code | Description
 |--------------|----------|----------------|
 Too Many Requests | 429 | [PBL] (429): Your are being ratelimited, 1 request per 5 mins.
 Not Found | 404 | Can't find `server_count`.
-Not Found | 404 | Authorization header not found.
+Forbidden | 403 | Authorization header not found, Go generate a auth token for your bot or make sure it's valid!
 Bad Request | 400 | server_count not integer.
 Not Found | 404 | Bot not found!
 Bad Request | 400 | Incorrect authorization token.
-Not Found | 404 | Go generate auth token for your bot!
+Not Found | 403 | Authorization header not found, Go generate a auth token for your bot or make sure it's valid!
 Bad Request | 400 | shard_count not integer.
 Forbidden | 403 | Bot is not approved.
 OK | 200 | Your Stats Have Been Posted.
@@ -83,7 +83,7 @@ client | Snowflake | No | The Client ID for the bot you want to post stats to.
 
 --- 
 
-###### Discord.js v12 Example
+###### Discord.js - v12 Example
 ```js
 const Discord = require("discord.js")
 const client = new Discord.Client()
@@ -112,8 +112,8 @@ client.login("token")
 
 ```
 
-###### Discord.js v12 Example (Wtih event handler
-```js
+###### Discord.js v12 - Example (Wtih event handler
+```jsx
 module.exports = class extends EventClass {
     constructor() {
         super('ready', {
@@ -134,8 +134,8 @@ module.exports = class extends EventClass {
 }
 ```
 
-###### ([Discord Akairo](https://www.npmjs.com/package/discord-akairo)) Example
-```js
+###### ([Discord Akairo](https://www.npmjs.com/package/discord-akairo)) - Example
+```jsx
 const Discord = require('discord.js');
 const { Listener } = require('discord-akairo');
 const request = require('superagent');
@@ -200,8 +200,8 @@ shards | Number | Yes | Number of total shards the bot has.
 
 --- 
 
-###### Example
-```js
+###### Discord.js - Example
+```jsx
 const Discord = require("discord.js")
 const client = new Discord.Client()
 const prefix = "!";
