@@ -7,7 +7,7 @@ Instead of requesting our API to see the users who have voted for your bot, we n
 ---
 
 ## Getting Started
-Start setting up your webhook requests by following these steps
+* Start setting up your webhook requests by following these steps:
 1. Generate a Webhook in a Discord Channel of your choice.
 2. Go to your bots edit form | `https://paradisebots.net/bots/:BOTID/edit` 
 3. enter the URL you want the webhook to be sent to in the "Webhooks URL" field,
