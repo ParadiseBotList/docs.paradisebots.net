@@ -14,7 +14,8 @@ Instead of requesting our API to see the users who have voted for your bot, we n
 4.  you're all set! If you need help setting up webhooks inside of your bot don't be afraid to ask in our discord servers `#api-support` channel.
 
 #### URL Example
-<Route method="URL" path="discordapp.com/api/webhooks/:ID/:TOKEN" /> 
+The URL should be HTTPS: `https://discordapp.com/api/webhooks/WEBHOOK_ID/WEBHOOK_TOKEN`
+<Route method="POST" path="/api/webhooks/:ID/:TOKEN" /> 
 
 ###### URL Params
 Field | Type | Description
