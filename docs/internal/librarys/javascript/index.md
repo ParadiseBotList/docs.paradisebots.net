@@ -54,7 +54,7 @@ Status | Code | Description
 Too Many Requests | 429 | [PBL] (429): Your are being ratelimited, 1 request per 5 mins.
 Not Found | 404 | Can't find `server_count`.
 Not Found | 404 | Authorization header not found.
-Bad Request | 400 : `[PBL] (400): server_count not integer.`
+Bad Request | 400 | server_count not integer.
 Not Found | 404 | Bot not found!
 Bad Request | 400 | Incorrect authorization token.
 Not Found | 404 | Go generate auth token for your bot!
