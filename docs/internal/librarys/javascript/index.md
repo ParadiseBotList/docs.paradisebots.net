@@ -48,26 +48,19 @@ You can POST Server and Shard Count stats once every 5 minutes
 
 ---
 
-## Response
-
-> [ Error ] 429 : `[PBL] (429): Your are being ratelimited, 1 request per 5 mins.`
-
-> [ Error ] 404 : `[PBL] (404): Can't find server_count.`
-
-> [ Error ] 404 : `[PBL] (404): Authorization header not found.`
-
-> [ Error ] 400 : `[PBL] (400): server_count not integer.`
-
-> [ Error ] 404 : `[PBL] (404): Bot not found!`
-
-> [ Error ] 400 : `[PBL] (400): Incorrect authorization token.`
-
-> [ Error ] 404 : `[PBL] (404): Go generate auth token for your bot!`
-
-> [ Error ] 400 : `[PBL] (400): shard_count not integer.`
-
-
-> [ Success ] 200 : **[200]: Your Stats Has Been Posted.**
+###### Response
+Status | Code | Description
+|--------------|----------|----------------|
+Too Many Requests | 429 | [PBL] (429): Your are being ratelimited, 1 request per 5 mins.
+Not Found | 404 | Can't find `server_count`.
+Not Found | 404 | Authorization header not found.
+Bad Request | 400 : `[PBL] (400): server_count not integer.`
+Not Found | 404 | Bot not found!
+Bad Request | 400 | Incorrect authorization token.
+Not Found | 404 | Go generate auth token for your bot!
+Bad Request | 400 | shard_count not integer.
+Forbidden | 403 | Bot is not approved.
+OK | 200 | Your Stats Have Been Posted.
 
 ---
 
