@@ -14,10 +14,7 @@ Start setting up your webhook requests by following these steps
 4.  you're all set! If you need help setting up webhooks inside of your bot don't be afraid to ask in our discord servers `#api-support` channel.
 
 #### URL Example
-<Route method="URL" path="https://discordapp.com/api/webhooks/:CHANNELID/WEBHOOK_AUTH" /> 
-
-#### Default URL (Sent to our Server)
-<Route method="URL"path="https://discordapp.com/api/webhooks/763708725877538817/y_bWdK-uaZDwmE67iAuQWcXjaye1df9HBXMTlnMFOdwzKp1iv_Jtd5nijFSJ54Resfto" /> 
+<Route method="URL" path="discordapp.com/api/webhooks/:CHANNELID/WEBHOOK_AUTH" /> 
 
 ---
 
