@@ -50,7 +50,7 @@ You can POST Server and Shard Count stats once every 5 minutes
 
 ###### Response
 Status | Code | Description
-|--------------|----------|----------------|
+|---------- |----------|----------|
 Too Many Requests | 429 | Your are being ratelimited, 1 request per 5 mins.
 Not Found | 404 | Can't find `server_count`.
 Forbidden | 403 | Authorization header not found, Go generate a auth token for your bot or make sure it's valid!
@@ -77,14 +77,14 @@ PBL(client, token)
 
 ###### Arguments
 Parameter | Type | Optional | Description
-|--------------|----------|--------------|--------------|
+|----------|----------|----------|----------|
 token | String | No | The API Auth Token found on your bots page.
 client | Snowflake | No | The Client ID for the bot you want to post stats to.
 
 --- 
 
 ###### Discord.js - v12 Example
-```js
+```jsx
 const Discord = require("discord.js")
 const client = new Discord.Client()
 const prefix = "!";
@@ -177,7 +177,7 @@ PBL()
 
 ###### Arguments
 Parameter | Type | Optional | Description
-|--------------|----------|--------------|--------------|
+|----------|----------|----------|----------|
 username | String | Yes | The bots username.
 botid | Snowflake | Yes | The bots ID.
 owner | Snowflake | Yes | The bot owners ID.
