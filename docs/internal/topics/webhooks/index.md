@@ -2,19 +2,26 @@
 title: Webhooks
 ---
 
-Instead of requesting our API to see the users who have voted for your bot, we now have webhooks! Webhooks will send a post request to a URL of your choice when your bot has been voted for.
+Instead of requesting our API to see the users who have voted for your bot, we now have webhooks! Webhooks will send a POST request to a URL of your choice when your bot has been voted for.
 
 ---
 
 ## Getting Started
-Start by setting up your webhook URL in the edit form of your bot on this site, it can be found at `https://paradisebots.net/bots/:BOTID/edit` once you have entered the URL you want the webhook to be sent to, you're all set! If you need help setting up webhooks inside of your bot don't be afraid to ask in our discord servers `#api-support` channel.
+Start setting up your webhook requests by following these steps
+1. Generate a Webhook in a Discord Channel of your choice.
+2. Go to your bots edit form | `https://paradisebots.net/bots/:BOTID/edit` 
+3. enter the URL you want the webhook to be sent to in the "Webhooks URL" field,
+4.  you're all set! If you need help setting up webhooks inside of your bot don't be afraid to ask in our discord servers `#api-support` channel.
+
+#### URL Example
+<Route method="URL" path="https://discordapp.com/api/webhooks/:CHANNELID/WEBHOOK_AUTH" /> 
+
+#### Default URL (Sent to our Server)
+<Route method="URL"path="https://discordapp.com/api/webhooks/763708725877538817/y_bWdK-uaZDwmE67iAuQWcXjaye1df9HBXMTlnMFOdwzKp1iv_Jtd5nijFSJ54Resfto" /> 
 
 ---
 
 ## Data Format
-
-<Route method="POST" path="/api/v1/bot/:botid/vote" /> 
-
 The format of the data your webhook URL will receive in a POST request
 
 ###### JSON Params
