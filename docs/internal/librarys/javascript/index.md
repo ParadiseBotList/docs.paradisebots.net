@@ -46,6 +46,11 @@ Append the Line below to your package.json
 ## Ratelimits
 You can POST Server and Shard Count stats once every 5 minutes
 
+###### Rate Limit Structure
+| Route	| Request | Requests Allowed Per 5 Minutes | Punishment if Exceeded
+|--------------|----------|--------------|--------------|
+/api/v1/bot/:botid | POST | 1 | 1 Hour Block
+
 ---
 
 ###### Response
@@ -69,8 +74,7 @@ OK | 200 | Your Stats Have Been Posted.
 
 <Route method="POST" path="/api/v1/bot/:botid" auth /> 
 
-### Constructor
-
+###### Constructor
 ```
 PBL(client, token)
 ```
@@ -169,8 +173,7 @@ module.exports = class ReadyListener extends Listener {
 
 <Route method="GET" path="/api/v1/bots/:botid" />
 
-### Constructor
-
+###### Constructor
 ```
 PBL()
 ```
