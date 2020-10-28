@@ -1,6 +1,6 @@
 ---
 title: Paradise API v1.0.8
-shortTitle: Paradise v1.0.8
+shortTitle: API v1.0.8
 noTOC: true
 ---
 
