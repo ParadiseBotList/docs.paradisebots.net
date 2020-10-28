@@ -5,8 +5,8 @@ noTOC: true
 ---
 
 ## Major Updates:
-* Implemented Bots and Votes GET Methods
-* Implemented usersVoted Methods (Backend)
+* Implemented Bots GET Methods
+* Implemented Votes Methods
 * Implemented GET Example
 * Update to v1.0.3
 * Push to NPM
@@ -18,6 +18,8 @@ noTOC: true
 * Implemented usersVoted Methods
 * Reorganized POST and GET Methods
 * Updated Constructor and Usage (see Docs)
+* Updated POST
+* Updated Responses
 
 
 ---
