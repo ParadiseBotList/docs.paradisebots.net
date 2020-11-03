@@ -190,7 +190,7 @@ shortDescription | String | Yes | The bots short description (Shown on cards).
 longDescription | String | Yes | The bots long description (Can be markdown).
 votes | Number | Yes | The bots total number of upvotes.
 usersVoted | String | Yes |IDs of the last 10 users who voted (May return less).
-usersVotedTotal | Number | Yes | Total number of Individual Users who have voted (Each user = 1).
+totalUsersVoted | Number | Yes | Total number of Individual Users who have voted (Each user = 1) Limited to 10.
 server | String | Yes | Link to the bots support server.
 website | String | Yes | Link to the bots website.
 github | String | Yes | Link to the bots github.
