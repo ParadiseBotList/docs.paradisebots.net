@@ -13,7 +13,7 @@ date | Number | The date of the vote.
 
 ## Voting Endpoint (Linked to Bot)
 
-<Route method="GET" path="api/v1/bots/{botid}/vote" />
+<Route method="GET" path="api/v1/bots/:botid/vote" />
 
 ---
 
@@ -23,9 +23,30 @@ Paradise Bots allows users to Vote for bots, Bots with the highest number of Vot
 * Users can vote for your bot by visiting your bots page and clicking the "Vote" button.
 ---
 
-## Voting Terms
-• Abuse of the `Paradise Bots API` or the `Paradise Bots Voting System` in an attempt to gain access to the `Certification Program` will result in a ban from both our API and our Voting System.
+## Ratelimits
+Users can currently vote every 12 hours for each bot.
 
-• Creating ALT (Alternate) accounts to Vote for bots (including your own) will result in a ban from both our API and our Voting System.
+---
+
+# Voting API Rules.
+
+Unacceptable use of our API (breaking these rules will result in appropriate punishments):
+
+1. "Vote locking" a large percentage AND/OR majority of your bots commands AND/OR features.
+2. Punishing users of your bot AND/OR community for not voting.
+3. Bots should not be rewarding users for voting for another bot. E.g if a User votes for Bot A they should not be receiving Bot B's currency
+
+---
+
+## Acceptable use of our API:
+1. Reward users of your bot for voting.
+2. Try to limit voting required commands to 2-3
+
+---
+
+## Consequences of breaking these rules:
+* First Offence - A stern warning from one of our beautiful moderators and possible reverting of bot votes.
+* Second Offence - If you haven't changed your ways after your first offence, or you are caught breaking these rules a second time, we will lock your access to the voting endpoint(s) and reset your votes.
+* We reserve the right to not follow these consequences in the exact order they are laid out here and take action how we see fit dependant on the scenario
 
 ---
