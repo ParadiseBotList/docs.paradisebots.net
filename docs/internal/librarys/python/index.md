@@ -81,6 +81,7 @@ class Paradise:
             "Content-Type": "application/json",
             "Authorization": self.token
         }
+        ## If you have issues set "data=data" as "body=data"
         requests.post(f"https://paradisebots.net/api/v1/bot/{self.bot_id}", data=data, headers=headers) // If you have issues set "data=data" as "body=data"
 ```
 
@@ -200,6 +201,7 @@ class Paradise:
             "Content-Type": "application/json",
             "Authorization": self.token
         }
-        requests.post(f"https://paradisebots.net/api/v1/bots/{self.bot_id}", data=data, headers=headers) // If you have issues set "data=data" as "body=data"
+        ## If you have issues set "data=data" as "body=data"
+        requests.post(f"https://paradisebots.net/api/v1/bots/{self.bot_id}", data=data, headers=headers)
 
 ```
