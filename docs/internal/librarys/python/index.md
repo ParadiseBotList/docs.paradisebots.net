@@ -137,6 +137,7 @@ class Paradise:
 
 ## Full Wrapper
 
+###### paradise.py
 ```python
 
 import requests, json
