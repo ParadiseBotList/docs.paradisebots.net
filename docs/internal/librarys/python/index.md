@@ -82,7 +82,7 @@ class Paradise:
             "Authorization": self.token
         }
         ## If you have issues set "data=data" as "body=data"
-        requests.post(f"https://paradisebots.net/api/v1/bot/{self.bot_id}", data=data, headers=headers) // If you have issues set "data=data" as "body=data"
+        requests.post(f"https://paradisebots.net/api/v1/bot/{self.bot_id}", data=data, headers=headers)
 ```
 
 ## Getting Stats
