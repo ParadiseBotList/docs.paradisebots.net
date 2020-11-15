@@ -2,6 +2,11 @@
 title: Python Library
 ---
 
+## paradiseapi.py
+
+This is our official Python Library used for interacting with the Paradise API.
+
+---
 ## Support
 
 * [Discord](https://paradisebots.net/join)
