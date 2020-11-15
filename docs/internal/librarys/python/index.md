@@ -4,7 +4,7 @@ title: Python Library
 
 ## paradiseapi.py
 
-This is our official Python Library used for interacting with the Paradise API.
+This is a user made Python Library used for interacting with the Paradise API.
 
 ---
 ## Support
