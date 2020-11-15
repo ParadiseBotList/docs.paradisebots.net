@@ -80,7 +80,7 @@ PBL(client, token)
 ```
 
 ###### Arguments
-Parameter | Type | Optional | Description
+Arg | Type | Optional | Description
 |----------|----------|----------|----------|
 token | String | No | The API Auth Token found on your bots page.
 client | Snowflake | No | The Client ID for the bot you want to post stats to.
@@ -179,7 +179,7 @@ PBL()
 ```
 
 ###### Arguments
-Parameter | Type | Optional | Description
+Arg | Type | Optional | Description
 |----------|----------|----------|----------|
 username | String | Yes | The bots username.
 botid | Snowflake | Yes | The bots ID.
