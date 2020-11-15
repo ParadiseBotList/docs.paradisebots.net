@@ -32,7 +32,7 @@ Authentication is performed with the Authorization HTTP header in the format `"a
   requiresAuthorization
   payload={{
     token: {
-      type: "Autorization: 6jShKo4HBuMIEdTeFUk1",
+      type: "authorization: 6jShKo4HBuMIEdTeFUk1",
       description: "Authorization Token"
     }
   }}
@@ -41,7 +41,7 @@ Authentication is performed with the Authorization HTTP header in the format `"a
 ---
 
 ## Required Data
-The following params should be provided as the `body` of your request when posting stats to our site.
+The following params should be provided as the `body` or `payload` of your request when posting stats to our site.
 
 ---
 
