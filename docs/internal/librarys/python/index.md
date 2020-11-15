@@ -81,7 +81,7 @@ class Paradise:
 
 ## Getting Stats
 
-<Route method="GET" path="/api/v1/bots/:botid/info" auth /> 
+<Route method="GET" path="/api/v1/bots/:botid" /> 
 
 ---
 
@@ -97,9 +97,8 @@ def basic_return(bot_id, q):
         raise ValueError("Invalid Bot ID.")
 
 class Paradise:
-    def __init__(self, bot_id, token):
+    def __init__(self, bot_id):
         self.bot_id = bot_id
-        self.token = token
         self.tags = basic_return(bot_id, "tags").split(", ")
         self.votes = basic_return(bot_id, "totalUsersVoted")
         self.users_voted = basic_return(bot_id, "usersVoted").split(", ")
@@ -188,8 +187,8 @@ class Paradise:
     
     def post_stats(self):
         data = {
-            "servers": len(client.guilds),
-            "shards": client.shard_count
+            "server_count": len(client.guilds),
+            "shard_count": client.shard_count
         }
         headers = {
             "Content-Type": "application/json",
