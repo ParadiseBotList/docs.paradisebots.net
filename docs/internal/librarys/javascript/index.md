@@ -4,7 +4,7 @@ title: JavaScript Library
 
 ## paradiseapi.js
 
-This is our official library used for interacting with the Paradise API.
+This is our official JavaScript Library used for interacting with the Paradise API.
 
 ---
 
