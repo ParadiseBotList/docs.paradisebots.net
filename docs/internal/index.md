@@ -1,7 +1,6 @@
 ---
-shortTitle: Paradise Docs
-title: Paradise Documentation
-isRoot: true
+shortTitle: API Docs
+title: API Documentation
 ---
 
  ## Introduction.
