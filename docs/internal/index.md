@@ -2,8 +2,6 @@
 shortTitle: Paradise Docs
 title: Paradise Documentation
 isRoot: true
-noBreadcrumb: true
-overrideNav: Paradise Docs
 ---
 
  ## Introduction.
