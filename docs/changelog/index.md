@@ -1,6 +1,6 @@
 ---
 shortTitle: Changelog
-title: Changelog
+title: Paradise Changelog
 noBreadcrumb: true
 noTOC: true
 ---
