@@ -1,5 +1,5 @@
 ---
-title: Community
+title: Paradise Community
 noTOC: true
 ---
 
