@@ -1,5 +1,5 @@
 ---
-title: Paradise Community
+title: Community Documentation
 noTOC: true
 ---
 
