@@ -438,15 +438,14 @@ import "prismjs/components/prism-python.js";
 <Collapse>
   <ExternalSnippet
     src={"https://gist.githubusercontent.com/jazevedo620/a28cdc92a624c290ccf91541b418bdae/"
-       + "raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py"}
+     + "raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py"}
     language="python"
   />
 </Collapse>
 ```
 
 <Collapse>
-<ExternalSnippet src="https://gist.githubusercontent.com/jazevedo620/a28cdc92a624c290ccf91541b418bdae/"
-       + "raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py" 
+<ExternalSnippet src="https://gist.githubusercontent.com/jazevedo620/a28cdc92a624c290ccf91541b418bdae/raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py" 
    language="python" />
 </Collapse>
 
@@ -459,11 +458,10 @@ import "prismjs/components/prism-python.js";
 ```jsx
 <ExternalSnippet
   src={"https://gist.githubusercontent.com/jazevedo620/a28cdc92a624c290ccf91541b418bdae/"
-       + "raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py"}
+     + "raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py"}
   language="python"
 />
 ```
 
-<ExternalSnippet src="https://gist.githubusercontent.com/jazevedo620/a28cdc92a624c290ccf91541b418bdae/"
-       + "raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py" language="python" />
+<ExternalSnippet src="https://gist.githubusercontent.com/jazevedo620/a28cdc92a624c290ccf91541b418bdae/raw/1bfef7f4fb49df08d3685611354b71bd9424d4a6/app.py" language="python" />
 </Demo>
