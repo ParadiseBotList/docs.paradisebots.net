@@ -392,14 +392,14 @@ Snippets from the local repository can be embedded on the site (either inside a 
 ~~~md
 <Collapse>
 
-`embed:internal/community/example-include.py`
+`embed:community/example-include.py`
 
 </Collapse>
 ~~~
 
 <Collapse>
 
-`embed:internal/community/example-include.py`
+`embed:community/example-include.py`
 
 </Collapse>
 </Demo>
@@ -409,10 +409,10 @@ Snippets from the local repository can be embedded on the site (either inside a 
 <Demo>
 
 ```md
-`embed:internal/community/example-include.py`
+`embed:community/example-include.py`
 ```
 
-`embed:internal/community/example-include.py`
+`embed:community/example-include.py`
 
 </Demo>
 
