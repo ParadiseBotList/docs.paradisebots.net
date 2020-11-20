@@ -15,6 +15,10 @@ noTOC: true
 * Removed HTML Checks on Bot Long Descriptions.
 * Implemented and Updated support for HTML in Bot Long Descriptions.
 * Updated and reorganized the staff panel.
+* Implemented a proper cookie script.
+* Updated google support.
+* Implemented a method for Transferring bot owners on the website (staff only)
+* Added staff checks on panel pages.
 
 ---
 
@@ -26,6 +30,7 @@ noTOC: true
 * Moved the "prefix" location on Bot Pages (included in the card now).
 * Updated and Implemented new Cookie Consent Methods.
 * Implement "Browser Check" on Vote Pages.
+* Updated "bot tags".
 
 ---
 
