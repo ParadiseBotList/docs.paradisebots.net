@@ -1,6 +1,6 @@
 ---
-title: Paradise Site v2.30
-shortTitle: Paradise v2.30
+title: Paradise Site v2.40
+shortTitle: Paradise v2.40
 noTOC: true
 ---
 
