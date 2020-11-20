@@ -31,6 +31,7 @@ noTOC: true
 * Updated and Implemented new Cookie Consent Methods.
 * Implement "Browser Check" on Vote Pages.
 * Updated "bot tags".
+* Implemented vanity urls for certified bots (/bots/botname)
 
 ---
 
