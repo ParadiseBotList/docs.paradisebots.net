@@ -1,6 +1,8 @@
 const themeColor = "#748CDA";
 const bgColor = "#496D8F";
 
+const secondaryTheme = "";
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`
 });
