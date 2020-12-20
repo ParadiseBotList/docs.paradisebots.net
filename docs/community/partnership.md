@@ -63,6 +63,7 @@ Warning: Partner Applications for bots are Closed!!
 * All Partnered Discord Bots are expected to have Private (Owner or Admin only) Eval and Exec commands
 * No Public DM Commands
 * No Mass DM Commands
+* Provide more then 7 Functional Commands, not including the help command
 
 ---
 
