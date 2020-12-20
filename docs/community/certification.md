@@ -12,8 +12,8 @@ certifiedBadge | Object | The Certified Bot Badge featured on the bot page.
 
 ## Certification Requirements
 * All bots must meet these requirements before being considered for Certification.
-  1. Have atleast 30 Votes.
-  2. Has been Listed for `15 Days` or longer.
+  1. Have atleast 15 Votes.
+  2. Has been Listed for `7 Days` or longer.
   3. No NSFW content outside of NSFW channels.
   4. No Mass DM Commands.
   5. No Public DM Commands (DM a user) unless the DM says who the message was from.
