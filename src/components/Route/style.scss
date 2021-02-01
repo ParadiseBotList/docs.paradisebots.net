@@ -1,7 +1,7 @@
-@import "../../scss/colors";
-@import "../../scss/theme";
-@import "../../scss/fonts";
-@import "../../scss/media";
+import "../../scss/colors";
+import "../../scss/theme";
+import "../../scss/fonts";
+import "../../scss/media";
 
 .route {
     $this: &;
