@@ -1,5 +1,6 @@
 const themeColor = "#748CDA";
 const bgColor = "#496D8F";
+const themeBgColor = "496D8F";
 
 const secondaryTheme = "";
 
